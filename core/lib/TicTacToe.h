@@ -96,13 +96,6 @@ private:
 		BoardState::VOID_STATE, BoardState::VOID_STATE, BoardState::VOID_STATE,
 		BoardState::VOID_STATE, BoardState::VOID_STATE, BoardState::VOID_STATE,
 	};
-
-	static constexpr std::array<BoardState, 9> m_initalBoardStates
-	{
-		BoardState::VOID_STATE, BoardState::VOID_STATE, BoardState::VOID_STATE,
-		BoardState::VOID_STATE, BoardState::VOID_STATE, BoardState::VOID_STATE,
-		BoardState::VOID_STATE, BoardState::VOID_STATE, BoardState::VOID_STATE,
-	};
 	
 	// Where to draw textures & where player has clicked
 	static constexpr std::array<SDL_FRect, 9> m_boardGrid

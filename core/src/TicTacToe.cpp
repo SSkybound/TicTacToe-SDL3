@@ -269,7 +269,7 @@ void Game::KeyboardEvent(SDL_Event &e)
 	switch (ke.key)
 	{
 	case SDLK_Y:
-		m_boardStates = m_initalBoardStates;
+		m_boardStates.fill(BoardState::VOID_STATE);
 		m_gameWinner = BoardState::VOID_STATE;
 		m_gameOver = false;
 		break;
