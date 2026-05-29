@@ -1,3 +1,6 @@
+#ifndef TICTACTOE_H
+#define TICTACTOE_H
+
 #include <SDL3/SDL.h>
 #include <SDL3_mixer/SDL_mixer.h>
 
@@ -143,3 +146,5 @@ private:
 	bool m_gameOver{ false };
 	BoardState m_gameWinner{BoardState::VOID_STATE};
 };
+
+#endif
