@@ -103,6 +103,9 @@ private:
 	SDL_Surface* m_pXOSurface{};
 	SDL_Texture* m_pXOTexture{};
 
+	// Window icon
+	SDL_Surface* m_pWindowIcon{};
+
 	// Master mix
 	MIX_Mixer* m_pMixer{};
 	

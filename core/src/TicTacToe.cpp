@@ -26,10 +26,13 @@ void Game::Init()
 	// Load assets into memory
 	m_pBoardSurface = SDL_LoadPNG("assets/board.png");
 	m_pXOSurface = SDL_LoadPNG("assets/xo-textures.png");
+	m_pWindowIcon = SDL_LoadPNG("assets/icon.png");
 
 	// Copy surface data to textures
 	m_pBoardTexture = SDL_CreateTextureFromSurface(m_pRenderer, m_pBoardSurface);
 	m_pXOTexture = SDL_CreateTextureFromSurface(m_pRenderer, m_pXOSurface);
+	
+	SDL_SetWindowIcon(m_pWindow, m_pWindowIcon);
 
 	// Free up surface memory
 	SDL_DestroySurface(m_pBoardSurface);
