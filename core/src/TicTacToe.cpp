@@ -68,20 +68,6 @@ void Game::Run()
 		Update();
 		Render();
 	}
-
-	// Audio destruction
-	MIX_DestroyAudio(m_pInvalidSelection);
-	MIX_DestroyTrack(m_pSfxTrack);
-	MIX_DestroyMixer(m_pMixer);
-	MIX_Quit();
-
-	// Graphics destruction
-	SDL_DestroyTexture(m_pBoardTexture);
-	SDL_DestroyTexture(m_pXOTexture);
-	SDL_DestroyRenderer(m_pRenderer);
-	SDL_DestroyWindow(m_pWindow);
-
-	SDL_Quit();
 }
 
 void Game::Input()
